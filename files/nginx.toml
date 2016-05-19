@@ -1,0 +1,8 @@
+[template]
+src = "nginx.conf.tmpl"
+dest = "/etc/nginx/nginx.conf"
+keys = [
+    "/ETCDKEY",
+]
+#check_cmd = "/usr/sbin/nginx -t"
+reload_cmd = "/usr/sbin/service nginx reload"
