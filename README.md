@@ -1,6 +1,6 @@
 To run
 
-docker run -d -p <host_port>:80 -e ETCDKEY=<etcd-key> -e ETCDURL=<etcd_http_url> -e CONFDINT=<interval in secs> gauravsj9/nginx-confd-etcd
+docker run -d -p host_port:80 -e ETCDKEY=etcd-key -e ETCDURL=etcd_http_url -e CONFDINT=interval_in_secs gauravsj9/nginx-confd-etcd
 
 for example
 
