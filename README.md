@@ -1,1 +1,5 @@
-docker run -d -p 5555:80 -e ETCDKEY=hello-80 -e ETCDURL=http://172.27.59.156:4001 -e CONFDINT=10 gauravsj9/nginx-confd-etcd
+To run
+docker run -d -p <host_port>:80 -e ETCDKEY=<etcd-key> -e ETCDURL=<etcd_http_url> -e CONFDINT=<interval in secs> gauravsj9/nginx-confd-etcd
+
+for example
+docker run -d -p 5555:80 -e ETCDKEY=apache -e ETCDURL=http://127.0.0.1:4001 -e CONFDINT=10 gauravsj9/nginx-confd-etcd
